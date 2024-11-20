@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ethnicmen</title>
+    <style>
+        .cas{
+            text-align: center;
+        }
+        .inp{
+            text-align: center;
+        }
+        .hello{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            padding-left: 50px;
+        }
+        .clothing-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .hello1{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            padding-left: 50px;
+        }
+        
+        .clothing-image {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        
+        .clothing-title {
+            font-size: 18px;
+            margin: 15px 0 10px;
+        }
+        
+        .clothing-description {
+            color: #666;
+            margin: 0 0 10px;
+        }
+        
+        .clothing-price {
+            font-weight: bold;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+        
+        .clothing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+            </style>
+</head>
+<body>
+    <div class="cas">
+        <h1>MEN CASUALS</h1>
+    </div>
+    <div class="inp">
+        <form action="">
+            <input type="number" placeholder="enter min value" id="min">
+            <input type="number" placeholder="enter max value" id="max"> 
+            <input type="submit" id="sub">
+        </form>
+        <div class="hello">
+            <div class="clothing-card">
+                <img src="https://imgs.search.brave.com/MxbVK43FMkBYxSpOPUhxc_bZzFO2QXyHlIUdSeF4it8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS11ay5sYW5kbWFy/a3Nob3BzLmluL2Nk/bi1jZ2kvaW1hZ2Uv/aD03Mzksdz00OTks/cT04NSxmaXQ9Y292/ZXIvbGlmZXN0eWxl/LzEwMDAwMTI4MzIx/MDYtUHVycGxlLVBs/dW0tMTAwMDAxMjgz/MjEwNl8wMS0yMTAw/LmpwZw" alt="Clothing Item" class="clothing-image">
+                <h3 class="clothing-title">Stylish Shirt</h3>
+                <p class="clothing-description">A stylish and comfortable shirt for all occasions.</p>
+                <p class="clothing-price">$650</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="clothing-card">
+                <img src="https://imgs.search.brave.com/zKfTjcpvnlrhRdKnbuTkDIspUcxaKsYtoRBQQfqzJNs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZWxvLnNob3BwaW5n/L2Nkbi9zaG9wL2Zp/bGVzL0RTQzIxMzlf/ZjBjNmNhY2EtMjRj/MS00OWY5LWEwZTct/YzllZmEwZGQwOTZm/LmpwZz92PTE3MTU5/NDgyMDAmd2lkdGg9/NTMz" alt="Clothing Item" class="clothing-image">
+                <h3 class="clothing-title">Stylish Shirt</h3>
+                <p class="clothing-description">A stylish and comfortable shirt for all occasions.</p>
+                <p class="clothing-price">$700</p>
+                <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="clothing-card">
+            <img src="https://imgs.search.brave.com/rOQ98ZTUD_TTSN7H309gd0NiqbBfE-XFOYNdS71feZ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS11cy5sYW5kbWFy/a3Nob3BzLmluL2Nk/bi1jZ2kvaW1hZ2Uv/aD03Mzksdz00OTks/cT04NSxmaXQ9Y292/ZXIvbGlmZXN0eWxl/LzEwMDAwMTM1MTYw/MzQtR3JlZW4tU2Fn/ZS0xMDAwMDEzNTE2/MDM0XzAxLTIxMDAu/anBn" alt="Clothing Item" class="clothing-image">
+            <h3 class="clothing-title">Stylish Shirt</h3>
+            <p class="clothing-description">A stylish and comfortable shirt for all occasions.</p>
+            <p class="clothing-price">$450</p>
+            <button class="add-to-cart">Add to Cart</button>
+    </div>
+    </div>
+    <div class="hello1">
+    <div class="clothing-card">
+        <img src="https://imgs.search.brave.com/1Tz_zX0OogP1TuumitY8Vspzz1vZYTwWukHMEqpbG5s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym9uc29pci5jby5p/bi9jZG4vc2hvcC9m/aWxlcy9Cb24xNDkz/MS5qcGc_Y3JvcD1j/ZW50ZXImaGVpZ2h0/PTI4ODQmdj0xNzIy/MTU0OTIwJndpZHRo/PTIyMTk" class="clothing-image">
+        <h3 class="clothing-title">Stylish Shirt</h3>
+        <p class="clothing-description">A stylish and comfortable shirt for all occasions.</p>
+        <p class="clothing-price">$800</p>
+        <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="clothing-card">
+            <img src="https://imgs.search.brave.com/M6EhG8PI-IVeZooXfxRvnYA_PDZHnTEZ1gF0CEVMrNg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS11cy5sYW5kbWFy/a3Nob3BzLmluL2Nk/bi1jZ2kvaW1hZ2Uv/aD03Mzksdz00OTks/cT04NSxmaXQ9Y292/ZXIvbGlmZXN0eWxl/LzEwMDAwMTMzODU2/MDUtR3JleS1HcmV5/LTEwMDAwMTMzODU2/MDVfMDEtMjEwMC5q/cGc" alt="Clothing Item" class="clothing-image">
+            <h3 class="clothing-title">Stylish Shirt</h3>
+            <p class="clothing-description">A stylish and comfortable shirt for all occasions.</p>
+            <p class="clothing-price">$900</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="clothing-card">
+            <img src="https://imgs.search.brave.com/djxR8ZM8j42vDgeo6RrNY6DhP8FaD_DNnsUc23v9mYA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFhcW11ajZxWEwu/anBn" alt="Clothing Item" class="clothing-image">
+            <h3 class="clothing-title">Stylish Shirt</h3>
+            <p class="clothing-description">A stylish and comfortable shirt for all occasions.</p>
+            <p class="clothing-price">$1000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+       
+            </div>
+            <script>
+                document.getElementById('sub').addEventListener('click', function(event) {
+                    event.preventDefault(); 
+                
+                    
+                    const minValue = parseInt(document.getElementById('min').value) || 0;
+                    const maxValue = parseInt(document.getElementById('max').value) || Infinity;
+                
+                    
+                    const clothingCards = document.querySelectorAll('.clothing-card');
+                
+                    
+                    clothingCards.forEach(card => {
+                        const priceText = card.querySelector('.clothing-price').innerText;
+                        const price = parseInt(priceText.replace('$', ''));
+                
+                        
+                        if (price >= minValue && price <= maxValue) {
+                            card.style.display = 'block'; 
+                        } else {
+                            card.style.display = 'none'; 
+                        }
+                    });
+                });
+                </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofadi+One&display=swap');
+      .mwl1{
+        font-style: italic;
+        color: crimson;
+        font-size: 500%;
+        font-family: "Dancing Script", cursive;
+        padding-bottom: 10px;
+      }
+
+      .para{
+        color: rgb(81, 61, 162);
+        text-align: left;
+        font-style: italic;
+        font-size: 200%;
+        padding: left 50px;
+        padding-top: 50px;
+        background-image: url("https://files.123freevectors.com/wp-content/original/111534-light-color-blurred-background-vector.jpg");
+      }
+      .ser{
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 20px;
+      }
+.card-img{
+  border-radius: 50%;
+  border-color: antiquewhite;
+  padding: 20px; 
+  margin: 1px;
+}
+.row > div {
+  margin-top: 10px;
+  padding: 20px;
+  outline: 2px solid #d1c2c2;
+  outline-offset: -10px;
+  -moz-outline-radius: 10px;
+  -webkit-outline-radius: 10px;
+  border-radius: 20px;
+}
+.con h1{
+  text-align: center;
+  color: rgb(132, 5, 102);
+}
+.btn:hover{
+    background-color: rgb(123, 159, 230);
+}
+.btn{
+    border: 2px solid grey ;
+}
+.me:hover{
+    background-color: rgb(228, 222, 230);
+    transform: scale(1.15);
+}
+.rounded-image{
+    border-radius: 15px;
+}
+.img{
+    border-radius: 50px;
+}
+.row1{
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.menu{
+  text-align: center;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: brown;
+  padding-right: 10px;
+  text-shadow:black;
+
+}
+.row2{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 7px;
+  padding-top: 20px;
+}
+.card{
+  transition: all 0.3s;
+}
+.card:hover{
+  transform: scale(1.15);
+}
+.course{
+  font-style: italic;
+  font-size: 50px;
+  color: crimson;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.hy{
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: 45px;
+  color: rgb(60, 28, 56);
+  padding-left: 10px;
+  padding-top: 40px;
+  background-image: url("https://files.123freevectors.com/wp-content/original/111534-light-color-blurred-background-vector.jpg");
+}
+.class{
+  border-radius: 50px;
+  padding-left: 0%;
+  padding-bottom: 20px;
+}
+.im{
+  border: none;}
+  .row3{
+    border: 5px solid brown;
+    justify-content: center;
+  }
+  .registration-form{
+    margin-bottom: 100px;
+    background-color: rgb(244, 224, 234);
+    padding-left: 450px;
+    border-radius: 60px;
+  }
+  .btnreg{
+    border-radius: 10px;
+    color: rgb(45, 45, 68);
+  }
+  .btnreg:hover{
+    background-color: rgb(172, 172, 235);
+  }

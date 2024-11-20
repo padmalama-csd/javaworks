@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <style>
+    .women{
+        display: flex;
+        padding-top: 50px;
+        gap: 80px;
+        justify-content: center;
+    }
+    .men{
+        display: flex;
+        padding-top: 50px;
+        gap: 80px;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .home{
+        padding-top: 50px;
+        background-color: black;
+        color: antiquewhite;
+        padding-bottom: 50px;
+    }
+    .homdec{
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+        gap: 500px;
+    }
+    footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom li {
+    margin: 0 15px;
+}
+
+.footer-bottom a {
+    color: #333;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h5 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: #666;
+}
+
+.card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #218838;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+    
+    
+    
+  </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ShoppingSpree</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#clothing">clothing</a>
+              <a class="nav-link" href="#hom">Home Decors</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/662/994/original/vector-colorful-fashion-sale-banner.jpg" class="d-block w-100" height="700px" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://cdna.artstation.com/p/assets/images/images/018/867/486/large/gururaj-gk-22-11-18-04.jpg?1561033967" class="d-block w-100"  height="700px">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://img.freepik.com/free-vector/fashion-sale-with-discount-template_23-2148936503.jpg" class="d-block w-100"  height="700px" >
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://dcassetcdn.com/design_img/1799683/104021/104021_9794266_1799683_33b1bbe3_image.jpg" class="d-block w-100"  height="700px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="clothing">
+      <div class="women">
+        <div class="card" style="width: 23rem;">
+            <img src="https://imgs.search.brave.com/lRluYvxcthLsbxw-slDATfE-C7_UL4Y2Pg_SkJlvYiQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWZ1/ZnZ5NHhhbzZrOS5j/bG91ZGZyb250Lm5l/dC9pbWFnZXMvYmxv/Zy9wb3N0cy8yMDIx/LzA2LzI3OGE5NDQ1/XzQ4NTIuanBn" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Casuals</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="women casuals.html" class="btn btn-primary">View More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 25rem;">
+            <img src="https://imgs.search.brave.com/jjlcb47vpjdhj34Cehcnb5kIDddoQUYKV38O_4j9ZxQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaHJl/ZW1hbi5pbi9jZG4v/c2hvcC9maWxlcy9J/bWFnZTY3NjJFLmpw/Zz92PTE2ODQxNDY1/ODcmd2lkdGg9MzU2/NQ" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ethinc wear</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="ethnicwomen.html"class="btn btn-primary">View More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 25rem;">
+            <img src="https://imgs.search.brave.com/My0bvCokMLE3rUYJC7gAB8agK-xJEuniv7l83K-rKjM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYWdl/bmNlLmNvbS9jZG4v/c2hvcC9maWxlcy8y/OTM4WVJPX0JFQVVf/R0xFTkRPUkFfNTk0/MS5qcGc_dj0xNzIx/MTUzMjMzJndpZHRo/PTQ4MA" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" class="title">Jeans</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="women jeans.html" class="btn btn-primary">View More</a>
+            </div>
+          </div>
+      </div>
+      <div class="men">
+        <div class="card" style="width: 25rem;">
+            <img src="https://imgs.search.brave.com/YYW-wzul1OdZxA0MAgPbKB07JyiU67BBJxa-dgnTqUI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uZXh0/bGV2ZWx3YXJkcm9i/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMDMvTWVu/cy1CdXNpbmVzcy1D/YXN1YWwtRm9yLUlu/dGVydmlld3MuanBn" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Casuals</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="men casual.html" class="btn btn-primary">View More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 25rem;">
+            <img src="https://imgs.search.brave.com/ujuJUFsEaXdVU-70BR_Dv60qi-uGV6od4EwuzAAMcR4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FlL2Q1/LzZmL2FlZDU2ZjM4/ZmUyNjM0NWUyMTc0/OWQxM2E2NGFkMThl/LmpwZw" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ethnic Wear</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="men ethnic.html" class="btn btn-primary">View More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 25rem;">
+            <img src="https://imgs.search.brave.com/QWRHJoHeTRTzwgPZ2ul9ZH_ijDyXzkhUhOInOBDYkdA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5obS5jb20vYXNz/ZXRzL2htLzExLzYx/LzExNjFlYWY4MDMz/NDUzZGY0OTE5M2Vk/NGRhODczOTllMWJm/Y2QyYzkuanBnP2lt/d2lkdGg9MTUzNg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hoddies</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="men hoodies.html" class="btn btn-primary">View More</a>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="home">
+      <marquee scrollamount="20" class="ht"><h1>//HOME DECORS//NEW ARRIVALS//SALE//</h1></marquee>
+      </div>
+      <div id="hom">
+      <div class="homdec">
+      <div class="card" style="width: 25rem;">
+        <img src="https://imgs.search.brave.com/YUXmVI3ok1OFlTxNM2GF5XL58IJ2X5gooeto1EftD4A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuYXRob21lLmNv/bS9pbWFnZS91cGxv/YWQvZl9hdXRvLHFf/YXV0by92MTY2NTE4/MDI1OC9jL3N1YmNh/dHMvaG9tZS1kZWNv/ci1jb2xsZWN0aW9u/c18xNjY1MTgwMjU2/Njg2LWhvdXNlLnBu/Zw" class="card-img-top" height="500px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">HOME STYLES </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="home styles.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 25rem;">
+        <img src="https://imgs.search.brave.com/uPOi5RYHpRdJo9IAKR88W0ke43ougeQ1M2BE601K1Co/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c29mYXJ5LmNvbS9j/ZG4vc2hvcC9maWxl/cy9tb2Rlcm4tbHV4/dXJ5LWdvbGQtZ2xh/c3MtY2hhbmRlbGll/ci1mb3ItbGl2aW5n/LXJvb20tMi5qcGc_/dj0xNzAwNzEwMzY4/JndpZHRoPTEyMDA" class="card-img-top" height="500px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="chendalier.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+      </div>
+      </div>
+     <div class="hey">
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter Signup</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> SHOPPING SPREE. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    
+    
+</body>
+</html>

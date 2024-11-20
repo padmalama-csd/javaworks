@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>API </title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3b6b6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 20px;
+    display: inline-block;
+}
+
+a i {
+    transition: color 0.3s ease;
+}
+
+a i:hover {
+    color: #f0b77e;
+}
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: calc(33.33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.box h4 {
+    color: #333;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+    .box {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+}
+
+       
+         
+    </style>
+</head>
+<body>
+  <a href= "index.html" ><i class="fa-solid fa-arrow-left fa-2xl" style="color: #c8830d;"></i> </a>
+    <div id="calling" class="box1">
+
+    </div>
+    <script>
+     let call = document.getElementById('calling');
+        async function getdata() {
+           const url = await fetch('https://dummyjson.com/products');
+           let data = await url.json();
+           console.log(data);
+           let mydata = data.products;
+          const myfun = mydata.map(a=>{
+            return(
+                `<div class="box">
+                     
+                      <img src="${a.images[0]}">
+                       <h4>${a.title}</h4>
+                       <h4>${a.rating}</h4>
+                       
+                
+                </div>`
+                )
+          }).join("");
+          call.innerHTML = myfun;
+        }
+       getdata();
+    </script>
+</body>
+</html>

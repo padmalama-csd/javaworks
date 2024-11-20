@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Details</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #080808;
+    padding-top: 30px;
+    font-size: 32px;
+}
+
+.account-summary {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.account-summary h2 {
+    font-size: 24px;
+    color: #151715;
+    margin-bottom: 20px;
+}
+
+.account-summary p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.account-summary strong {
+    color: #090909;
+}
+.recent-transactions {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recent-transactions h2 {
+    font-size: 24px;
+    color: #101010;
+    margin-bottom: 20px;
+}
+
+.recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.recent-transactions table th,
+.recent-transactions table td {
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.recent-transactions table th {
+    background-color: #f8f8f8;
+    color: #171817;
+}
+
+.recent-transactions table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.recent-transactions table tr:hover {
+    background-color: #f1f1f1;
+}
+@media (max-width: 768px) {
+    .account-summary,
+    .recent-transactions {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .account-summary h2,
+    .recent-transactions h2 {
+        font-size: 20px;
+    }
+
+    .account-summary p,
+    .recent-transactions table th,
+    .recent-transactions table td {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Bank Account Details</h1>
+
+    <div class="account-summary">
+        <h2>Account Overview</h2>
+        <p><strong>Account Holder:</strong> lama</p>
+        <p><strong>Account Number:</strong> **** 1234</p>
+        <p><strong>Account Type:</strong> Checking</p>
+        <p><strong>Balance:</strong> ₹50,000.00</p>
+    </div>
+
+    <div class="recent-transactions">
+        <h2>Recent Transactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Transaction Description</th>
+                    <th>Amount</th>
+                    <th>Balance After Transaction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>November 10, 2024</td>
+                    <td>Deposit - Paycheck</td>
+                    <td>+ ₹2,000.00</td>
+                    <td>₹5,000.00</td>
+                </tr>
+                <tr>
+                    <td>November 5, 2024</td>
+                    <td>ATM Withdrawal</td>
+                    <td>- ₹200.00</td>
+                    <td>₹3,000.00</td>
+                </tr>
+                <tr>
+                    <td>October 30, 2024</td>
+                    <td>Transfer - Bill Payment</td>
+                    <td>- ₹500.00</td>
+                    <td>₹3,200.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #050505;
+            padding-top: 20px;
+        }
+
+        .account-summary {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .account-summary p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        .account-summary strong {
+            color: #121312;
+        }
+
+       
+        .deposit-form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .deposit-form input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .deposit-form button {
+            background-color: #151515;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .deposit-form button:hover {
+            background-color: #0d0e0d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bank Account Details</h1>
+
+   
+    <div class="account-summary">
+        <h2>Account Overview</h2>
+        <p><strong>Account Holder:</strong> lama</p>
+        <p><strong>Account Number:</strong> **** 1234</p>
+        <p><strong>Account Type:</strong> Checking</p>
+        <p><strong>Balance:</strong> $<span id="account-balance">5000.00</span></p>
+    </div>
+
+   
+    <div class="deposit-form">
+        <h2>Deposit Funds</h2>
+        <form id="deposit-form">
+            <label for="deposit-amount">Deposit Amount:</label>
+            <input type="number" id="deposit-amount" name="deposit-amount" required>
+            <button type="submit">Deposit Funds</button>
+        </form>
+    </div>
+
+    <script>
+        
+        document.getElementById('deposit-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+          
+            let depositAmount = parseFloat(document.getElementById('deposit-amount').value);
+            
+           
+            if (isNaN(depositAmount) || depositAmount <= 0) {
+                alert('Please enter a valid deposit amount.');
+                return;
+            }
+
+          
+            let currentBalance = parseFloat(document.getElementById('account-balance').textContent);
+
+            
+            let newBalance = currentBalance + depositAmount;
+
+            
+            document.getElementById('account-balance').textContent = newBalance.toFixed(2);
+            document.getElementById('deposit-amount').value = '';
+            alert('Deposit successful! Your new balance is $' + newBalance.toFixed(2));
+        });
+    </script>
+</body>
+</html>
